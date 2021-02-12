@@ -6,7 +6,7 @@
  */
 
 #include <cstdlib>
-
+#include <iostream>
 #include "fonctionsUtilitaires.h"
 using namespace std;
 
