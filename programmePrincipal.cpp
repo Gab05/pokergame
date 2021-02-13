@@ -15,17 +15,19 @@
 #include "fonctionsUtilitaires.h"
 using namespace std;
 
-int main(int argc, char** argv)
+int main()
 {
     srand(time(0));
     int reponse;
     int jeu[4][13] = {0};
     int poignee[5][2] = {0};
 
-    battre(jeu, poignee);
-    distribue(jeu, poignee);
-
+    cout << "Début" << endl;
     afficheJeu(jeu);
+
+    battre(jeu);
+
+    distribue(jeu, poignee);
 
     paires(poignee);
     brelans(poignee);
@@ -33,8 +35,7 @@ int main(int argc, char** argv)
     couleurs(poignee);
     suites(poignee);
 
-    cout << "fin";
+    cout << "Fin" << endl;;
     return 0;
-
 }
 
